@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengatur Kalori Makan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pengatur Kalori Makan</h1>
+    </header>
+    <main>
+        <form id="calorieForm">
+            <label for="food">Jenis Makanan:</label>
+            <input type="text" id="food" placeholder="Contoh: Ayam Panggang" required>
+
+            <label for="calories">Jumlah Kalori:</label>
+            <input type="number" id="calories" placeholder="Contoh: 250" required>
+
+            <button type="button" id="addBtn">Tambahkan</button>
+        </form>
+        <h2>Daftar Makanan:</h2>
+        <ul id="foodList"></ul>
+
+        <h3>Total Kalori: <span id="totalCalories">0</span></h3>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
